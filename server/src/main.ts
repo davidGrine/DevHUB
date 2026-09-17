@@ -22,7 +22,7 @@ const start = async () => {
   const PORT = process.env.PORT || 5000
 
   const FRONTEND_URL =
-    process.env.FRONTEND_URL || 'http://localhost:3000'
+    process.env.FRONTEND_URL 
 
   app.enableCors({
     origin: FRONTEND_URL,
