@@ -1,0 +1,111 @@
+.wrapper__upload__project {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+
+  .next__prev__btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+
+    .prev__step__btn {
+      background: var(--card-bg);
+      color: var(--button-bg);
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 20px;
+      border: 1px solid var(--button-bg);
+
+      &:hover {
+        background: var(--button-bg);
+        color: var(--primary-text);
+        border: 1px solid var(--button-bg);
+      }
+
+      &:disabled {
+        color: var(--primary-text);
+        border: 1px solid var(--card-bg);
+        cursor: not-allowed;
+
+        &:hover {
+          background: var(--card-bg);
+          color: var(--primary-text);
+          border: 1px solid var(--card-bg);
+        }
+      }
+    }
+
+    .next__step__btn {
+      background: var(--card-bg);
+      color: var(--button-bg);
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 20px;
+      border: 1px solid var(--button-bg);
+
+      &:hover {
+        background: var(--button-bg);
+        color: var(--primary-text);
+        border: 1px solid var(--button-bg);
+      }
+
+      &:disabled {
+        color: var(--primary-text);
+        border: 1px solid var(--card-bg);
+        cursor: not-allowed;
+
+        &:hover {
+          background: var(--card-bg);
+          color: var(--primary-text);
+          border: 1px solid var(--card-bg);
+        }
+      }
+    }
+
+    .publish__btn {
+      background: var(--card-bg);
+      color: var(--button-bg);
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 20px;
+      border: 1px solid var(--button-bg);
+
+      &:hover {
+        background: var(--button-bg);
+        color: var(--primary-text);
+        border: 1px solid var(--button-bg);
+      }
+
+      &:disabled {
+        color: var(--primary-text);
+        border: 1px solid var(--card-bg);
+        cursor: not-allowed;
+
+        &:hover {
+          background: var(--card-bg);
+          color: var(--primary-text);
+          border: 1px solid var(--card-bg);
+        }
+      }
+    }
+  }
+}

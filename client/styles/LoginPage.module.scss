@@ -1,0 +1,90 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 1000px;
+	height: 944px;
+	gap: 20px;
+	background: var(--bg-card);
+	border-radius: 20px;
+	box-shadow: 0px 7px 89px 8px rgba(0, 0, 0, 0.25);
+	gap: 20px;
+
+	.header {
+
+		a {
+			color: var(--button-bg);
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: var(--primary-text);
+			}
+		}
+		
+		h1 {
+			font-size: 48px;
+		}
+	}
+
+	input {
+		outline: none;
+		width: 500px;
+		height: 70px;
+		padding: 20px;
+		border-bottom: 1px solid var(--button-bg);
+		font-size: 24px;
+		transition: all 0.3s ease;
+
+		&::placeholder {
+			color: var(--secondary-text);
+		}
+	}
+
+	textarea {
+		outline: none;
+		width: 800px;
+		height: 270px;
+		padding: 20px;
+		border-bottom: 1px solid var(--button-bg);
+		font-size: 24px;
+		transition: all 0.3s ease;
+		resize: none;
+
+		&::placeholder {
+			color: var(--secondary-text);
+		}
+	}
+
+	.submit__btn {
+		background: var(--button-bg);
+		color: #fff;
+		border-radius: 10px;
+		padding: 10px 20px;
+		font-size: 20px;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		margin-bottom: 20px;
+		border: 1px solid var(--button-bg);
+		width: 500px;
+		height: 70px;
+
+		&:hover {
+			background: var(--bg-card);
+			color: var(--button-bg);
+			border: 1px solid var(--button-bg);
+		}
+	}
+
+	.password {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-left: 10px;
+
+		button {
+			cursor: pointer;
+		}
+	}
+}

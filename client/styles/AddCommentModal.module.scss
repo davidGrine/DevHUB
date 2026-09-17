@@ -1,0 +1,66 @@
+.add__comment__modal__wrapper {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+
+	.add__comment__modal {
+		background-color: var(--bg-card);
+		max-width: 500px;
+		width: 500px;
+		height: 500px;
+		border-radius: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+
+		h1 {
+			font-size: 48px;
+		}
+
+		textarea {
+			outline: none;
+			width: 400px;
+			height: 270px;
+			padding: 20px;
+			border-bottom: 1px solid var(--button-bg);
+			font-size: 24px;
+			transition: all 0.3s ease;
+			resize: none;
+
+			&::placeholder {
+				color: var(--secondary-text);
+			}
+		}
+
+		button {
+			background: var(--button-bg);
+			color: #fff;
+			border-radius: 10px;
+			padding: 10px 20px;
+			font-size: 20px;
+			transition: all 0.3s ease;
+			cursor: pointer;
+			margin-bottom: 20px;
+			border: 1px solid var(--button-bg);
+			width: 400px;
+			height: 70px;
+
+			&:hover {
+				background: var(--bg-card);
+				color: var(--button-bg);
+				border: 1px solid var(--button-bg);
+			}
+		}
+	}
+}

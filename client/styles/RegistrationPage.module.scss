@@ -1,0 +1,273 @@
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 1000px;
+  min-height: 944px;
+
+  gap: 20px;
+
+  background: var(--bg-card);
+
+  border-radius: 20px;
+
+  box-shadow: 0px 7px 89px 8px rgba(0, 0, 0, 0.25);
+
+
+  .header {
+
+    a {
+      color: var(--button-bg);
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--primary-text);
+      }
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+  }
+
+
+  /*
+    Обёртка для input + ошибки.
+
+    Она имеет такую же ширину,
+    как и сам input — 500px.
+  */
+  .field {
+
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+
+  input {
+
+    outline: none;
+
+    width: 500px;
+    height: 70px;
+
+    padding: 20px;
+
+    border-bottom: 1px solid var(--button-bg);
+
+    font-size: 24px;
+
+    transition: all 0.3s ease;
+
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: var(--secondary-text);
+    }
+  }
+
+
+  textarea {
+
+    outline: none;
+
+    width: 800px;
+    height: 270px;
+
+    padding: 20px;
+
+    border-bottom: 1px solid var(--button-bg);
+
+    font-size: 24px;
+
+    transition: all 0.3s ease;
+
+    resize: none;
+
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: var(--secondary-text);
+    }
+  }
+
+  .add_avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    width: 500px;
+    background-color: var(--bg-card);
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+
+    .add__avatar__btn {
+      cursor: pointer;
+      background: var(--button-bg);
+      padding: 10px 20px;
+      border: 1px solid var(--button-bg);
+      font-size: 20px;
+      color: var(--primary-text);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      width: 245px;
+
+      &:hover {
+        background: var(--bg-card);
+        color: var(--button-bg);
+        border: 1px solid var(--button-bg);
+      }
+    }
+
+    .skip__image__btn {
+      cursor: pointer;
+      background: var(--button-bg);
+      padding: 10px 20px;
+      border: 1px solid var(--button-bg);
+      font-size: 20px;
+      color: var(--primary-text);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      width: 245px;
+      
+      &:hover {
+        background: var(--bg-card);
+        color: var(--button-bg);
+        border: 1px solid var(--button-bg);
+      }
+    }
+  }
+
+
+  /*
+    Ошибка конкретного поля.
+
+    Например:
+
+    Please enter your name
+    Username must contain at least 3 characters
+    Please enter a valid email address
+  */
+  .error {
+
+    width: 100%;
+
+    color: #ff4d4d;
+
+    font-size: 15px;
+
+    padding-left: 5px;
+  }
+
+
+  /*
+    Общая ошибка от backend.
+
+    Например:
+
+    This email is already registered
+    This username is already taken
+  */
+  .server__error {
+
+    width: 800px;
+
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    border: 1px solid #ff4d4d;
+
+    background: rgba(255, 77, 77, 0.1);
+
+    color: #ff4d4d;
+
+    font-size: 17px;
+
+    text-align: center;
+  }
+
+
+  .submit__btn {
+
+    background: var(--button-bg);
+
+    color: #fff;
+
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    font-size: 20px;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+
+    border: 1px solid var(--button-bg);
+
+    width: 500px;
+    height: 70px;
+
+    &:hover {
+
+      background: var(--bg-card);
+
+      color: var(--button-bg);
+
+      border: 1px solid var(--button-bg);
+    }
+
+    &:disabled {
+
+      opacity: 0.6;
+
+      cursor: not-allowed;
+    }
+  }
+
+
+  .password,
+  .repeat__password {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 500px;
+
+    margin-left: 10px;
+
+
+    button {
+
+      cursor: pointer;
+
+      background: transparent;
+
+      border: none;
+
+      font-size: 20px;
+
+      color: var(--primary-text);
+    }
+  }
+
+}

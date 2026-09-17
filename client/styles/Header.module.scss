@@ -1,0 +1,109 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	z-index: 100;
+	background: var(--bg-card);
+	color: var(--primary-text);
+	height: 100px;
+	box-shadow: 0px 7px 89px 8px rgba(0, 0, 0, 0.25);
+
+	.header__section__1__logo {
+		font-size: 40px;
+		position: relative;
+		margin-left: 70px;
+	}
+
+	.header__section__2__menu {
+		font-size: 24px;
+
+		.main__menu {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			gap: 10px;
+
+			.menu__item {
+				padding: 5px 10px;
+				border: 1px solid transparent;
+				border-radius: 10px;
+				transition:
+					border-color 0.3s ease,
+					color 0.3s ease;
+
+				&:hover {
+					border-color: var(--button-bg);
+					color: var(--button-bg);
+				}
+			}
+
+			.active {
+				background: var(--button-bg);
+				color: #fff;
+				border-radius: 10px;
+				padding: 5px 10px;
+				border: 1px solid var(--button-bg);
+			}
+		}
+	}
+
+	.header__section__3__my__account {
+		margin-right: 20px;
+
+		.avatar {
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			object-fit: cover;
+			display: block;
+		}
+
+		.registration__button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			padding: 12px 20px;
+
+			border: 1px solid var(--button-bg);
+			border-radius: 8px;
+
+			background: var(--button-bg);
+			color: #fff;
+
+			text-decoration: none;
+
+			transition: 0.2s ease;
+
+			&:hover {
+				border: 1px solid var(--button-bg);
+				background: var(--bg-card);
+				color: var(--button-bg);
+			}
+		}
+	}
+}
+
+.menu__open__btn {
+	cursor: pointer;
+	position: fixed;
+	z-index: 999;
+	left: 5px;
+	top: 40px;
+	font-size: 40px;
+	transition: all 0.3s ease;
+	padding: 5px 10px;
+	border-radius: 10px;
+
+	&:hover {
+		background: var(--button-bg);
+		color: #fff;
+	}
+}

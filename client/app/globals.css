@@ -1,0 +1,30 @@
+
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+:root[data-theme="light"] {
+	--background: #f8fafc;
+	--bg-card: #ffffff;
+	--button-bg: #2E68F4;
+	--primary-text: #0f172a;
+	--secondary-text: #64748b;
+}
+
+:root[data-theme="dark"] {
+	--background: #0F172A;
+	--bg-card: #111827;
+	--button-bg: #2E68F4;
+	--primary-text: #F8FAFC;
+	--secondary-text: #64748b;
+}
+
+body {
+	background: var(--background);
+	color: var(--primary-text);
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	transition: all 0.2s ease;
+	margin-top: 120px;
+}

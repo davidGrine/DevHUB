@@ -1,0 +1,52 @@
+.progress__bar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-width: 90%;
+	height: 100%;
+	border-radius: 10px;
+	padding: 20px;
+	transition: all 0.3s ease;
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 20px;
+		align-items: center;
+		cursor: pointer;
+		margin-bottom: 10px;
+		background: var(--bg-card);
+		box-shadow: 0px 7px 89px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+	}
+
+	div {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		align-items: center;
+		font-size: 20px;
+		transition: all 0.3s ease;
+
+		.step__number {
+			background: transparent;
+			padding: 1px 16px;
+			font-size: 30px;
+			border-radius: 50%;
+		}
+
+		.completed {
+			background: var(--button-bg);
+			color: #fff;
+			padding: 0px 12px;
+			font-size: 30px;
+			border-radius: 50%;
+		}
+	}
+}

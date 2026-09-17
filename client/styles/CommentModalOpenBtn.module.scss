@@ -1,0 +1,19 @@
+.button {
+	background: var(--button-bg);
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px 20px;
+	font-size: 20px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border: 1px solid var(--button-bg);
+	width: 500px;
+	height: 70px;
+
+	&:hover {
+		background: var(--bg-card);
+		color: var(--button-bg);
+		border: 1px solid var(--button-bg);
+	}
+}
